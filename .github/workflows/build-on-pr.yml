@@ -38,4 +38,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Build and pack
-        run: npm run lint && npm run prepack
+        run: npm run dev:prepare && npm run lint && npm run prepack
