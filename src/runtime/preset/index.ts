@@ -17,13 +17,16 @@ export default <NitroPreset>{
       const prefixLength = `${nitro.options.output.serverDir}/node_modules/`.length
       const suffixLength = '/package.json'.length
 
-      const dependencies = jsons.reduce((obj, packageJson) => {
-        const dirname = packageJson.slice(prefixLength, -suffixLength)
-        if (!dirname.includes('node_modules')) {
-          obj[dirname] = _require(packageJson).version
-        }
-        return obj
-      }, {} as Record<string, string>)
+      const dependencies = jsons.reduce(
+        (obj, packageJson) => {
+          const dirname = packageJson.slice(prefixLength, -suffixLength)
+          if (!dirname.includes('node_modules')) {
+            obj[dirname] = _require(packageJson).version
+          }
+          return obj
+        },
+        {} as Record<string, string>
+      )
 
       const getPackageVersion = async (id: string) => {
         const pkg = await readPackageJSON(id, {

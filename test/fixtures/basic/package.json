@@ -1,5 +1,13 @@
 {
   "private": true,
   "name": "basic",
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.10.1",
+    "firebase-functions": "^4.4.1"
+  }
 }

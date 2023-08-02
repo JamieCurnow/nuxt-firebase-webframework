@@ -1,10 +1,10 @@
 import { existsSync } from 'node:fs'
-import { defineNuxtModule, createResolver } from '@nuxt/kit'
-import { createRequire } from 'module'
-import { writeFile } from './runtime/preset/utils'
 import { join } from 'node:path'
+import { createRequire } from 'module'
+import { defineNuxtModule, createResolver } from '@nuxt/kit'
 import { defu } from 'defu'
 import type { HttpsOptions } from 'firebase-functions/lib/v2/providers/https'
+import { writeFile } from './runtime/preset/utils'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
