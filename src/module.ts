@@ -129,6 +129,6 @@ export default defineNuxtModule<ModuleOptions>({
     /* @ts-expect-error */
     nuxt.options.appConfig._nuxtWebFrameworkModuleOptions = options
 
-    nuxt.options.nitro.preset = resolver.resolve('./runtime/preset/index.ts')
+    nuxt.options.nitro.preset = resolver.resolve('./runtime/preset/index')
   }
 })
