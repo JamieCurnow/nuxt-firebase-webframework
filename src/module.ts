@@ -15,6 +15,7 @@ export interface ModuleOptions {
     [key: string]: string | undefined
   }
   frameworksBackend?: HttpsOptions
+  _moduleDev?: boolean
 }
 
 const defaultProjectId = '<your_project_id>'
@@ -129,6 +130,9 @@ export default defineNuxtModule<ModuleOptions>({
     /* @ts-expect-error */
     nuxt.options.appConfig._nuxtWebFrameworkModuleOptions = options
 
-    nuxt.options.nitro.preset = resolver.resolve('./runtime/preset/index')
+    // we need the file from .ts when we're in local and .mjs when we're in published package
+    nuxt.options.nitro.preset = resolver.resolve(
+      `./runtime/preset/index.${options._moduleDev ? 'ts' : 'mjs'}`
+    )
   }
 })

@@ -10,6 +10,7 @@ export default defineNuxtConfig({
       minInstances: 0,
       maxInstances: 4,
       concurrency: 80
-    }
+    },
+    _moduleDev: true
   }
 })

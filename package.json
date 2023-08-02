@@ -32,6 +32,7 @@
     "defu": "^6.1.2",
     "firebase-admin": "^11.10.1",
     "firebase-functions": "^4.4.1",
+    "globby": "^13.2.2",
     "pathe": "^1.1.1"
   },
   "devDependencies": {
