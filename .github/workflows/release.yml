@@ -25,6 +25,9 @@ jobs:
         uses: oleksiyrudenko/gha-git-credentials@v2-latest
         with:
           token: '${{ secrets.GITHUB_TOKEN }}'
+          name: 'JamieCurnow'
+          email: 'jamie@island-web.ca'
+          actor: 'jamiecurnow'
 
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v3
