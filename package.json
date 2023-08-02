@@ -1,7 +1,7 @@
 {
   "name": "nuxt-firebase-webframework",
   "version": "0.0.2",
-  "description": "A nitro preset for using Firebase Webframeworks with Nuxt to deploy full stack applications on Firebase",
+  "description": "A nuxt module for using Firebase Webframeworks with Nuxt to deploy full stack applications on Firebase",
   "repository": "https://github.com/JamieCurnow/nuxt-firebase-webframework",
   "license": "MIT",
   "type": "module",

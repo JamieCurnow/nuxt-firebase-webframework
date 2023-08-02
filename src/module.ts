@@ -59,7 +59,7 @@ export default defineNuxtModule<ModuleOptions>({
       // check for a firebase.rc file
       const firebaseRcPath = `${nitro.options.rootDir}/.firebaserc`
       if (!existsSync(firebaseRcPath)) {
-        const defaultFirebaseRc = _require('./runtime/firebase/.firebaserc.json')
+        const defaultFirebaseRc = _require('./runtime/firebase/firebaserc.json')
 
         defaultFirebaseRc.projects = defu(moduleOptions.projects, defaultFirebaseRc.projects)
 
