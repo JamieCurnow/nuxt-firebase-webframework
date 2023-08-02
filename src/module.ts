@@ -131,8 +131,12 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options.appConfig._nuxtWebFrameworkModuleOptions = options
 
     // we need the file from .ts when we're in local and .mjs when we're in published package
-    nuxt.options.nitro.preset = resolver.resolve(
-      `./runtime/preset/index.${options._moduleDev ? 'ts' : 'mjs'}`
-    )
+    const fileExt = options._moduleDev ? 'ts' : 'mjs'
+    nuxt.options.nitro.preset = resolver.resolve(`./runtime/preset/index.${fileExt}`)
+
+    /* @ts-expect-error */
+    nuxt.options.nitro.__nuxtWebFrameworkModuleOptions = {
+      entryFileExtension: fileExt
+    }
   }
 })

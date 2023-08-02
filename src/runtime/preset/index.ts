@@ -8,7 +8,9 @@ import { writeFile } from './utils'
 
 export default <NitroPreset>{
   extends: 'node',
-  entry: fileURLToPath(new URL('./entry.ts', import.meta.url)),
+  entry: fileURLToPath(
+    new URL('./entry.{{ __nuxtWebFrameworkModuleOptions.entryFileExtension }}', import.meta.url)
+  ),
   hooks: {
     async compiled(nitro) {
       const _require = createRequire(import.meta.url)
