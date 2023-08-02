@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "invoker": "public",
+      "minInstances": 0,
+      "maxInstances": 4,
+      "concurrency": 80
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "staging": "<your_project_id>",
+    "production": "<your_project_id>",
+    "default": "<your_project_id>"
+  }
+}
