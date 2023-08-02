@@ -21,6 +21,11 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@master
 
+      - name: Setup git
+        uses: oleksiyrudenko/gha-git-credentials@v2-latest
+        with:
+          token: '${{ secrets.GITHUB_TOKEN }}'
+
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v3
         with:
