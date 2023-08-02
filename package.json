@@ -1,6 +1,6 @@
 {
   "name": "nuxt-firebase-webframework",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A nuxt module for using Firebase Webframeworks with Nuxt to deploy full stack applications on Firebase",
   "repository": "https://github.com/JamieCurnow/nuxt-firebase-webframework",
   "license": "MIT",
