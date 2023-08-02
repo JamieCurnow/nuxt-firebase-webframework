@@ -1,5 +1,17 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/JamieCurnow/nuxt-firebase-webframework/compare/v0.0.2...v0.0.3)
+
+### 🏡 Chore
+
+- **release:** V0.0.2 ([7bd65c4](https://github.com/JamieCurnow/nuxt-firebase-webframework/commit/7bd65c4))
+
+### ❤️  Contributors
+
+- JamieCurnow ([@JamieCurnow](http://github.com/JamieCurnow))
+
 ## v0.0.2
 
